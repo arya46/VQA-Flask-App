@@ -1,0 +1,103 @@
+  
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/core.js"></script>
+        <script src="http://js/jquery-1.11.0.min.js"></script>
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    
+    </head>
+    <body>
+        <div> <!-- main div starts here -->
+        
+          <div class= "well" style="text-align:center"text>
+            <h1 style="color:green">VISUAL QUESTION ANSWERING</h1>
+          </div>  
+          
+          <div class="container"> <!-- input container starts here -->
+            <div class="row">
+              <!-- form starts here -->
+              <form action="/" method="post"  enctype="multipart/form-data" runat="server">
+              
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+              
+                <div class="col-sm-7"> <!-- image div starts here -->
+                  <div class= "well">
+                    <div class= "well" style="text-align:justify,text-decoration: underline">
+                      <h6 style="color:red; text-align:center">Upload Image</h6>
+                    </div>
+                    {% if fname %}
+                      <div>
+                        <img src="{{url_for('static', filename=fname)}}" alt="Preview Image" width='100%'/>
+                      </div>
+                    {% else %}
+                      <div class="form-group" >
+                        <label for="image_file">Select image:</label>
+                        <input type="file" id="imgInp" name="image_file" accept="image/*" required>
+                      </div>
+                      <div>
+                        <img id="blah" src="#" alt="Preview Image" width='100%'/>
+                      </div>
+                    {% endif %}
+                  </div>
+                </div> <!-- image div ends here -->
+              
+                <script>
+                  function readURL(input) {
+                      if (input.files && input.files[0]) {
+                        var reader = new FileReader();
+
+                        reader.onload = function(e) {
+                          $('#blah').attr('src', e.target.result);
+                        }
+
+                        reader.readAsDataURL(input.files[0]); // convert to base64 string
+                      }
+                  }
+                  $("#imgInp").change(function() {
+                      readURL(this);
+                  });
+                </script>
+        
+                <div class="col-sm-5"> <!-- question div starts here -->
+                  <div class= "well">
+                    <div class= "well" style="text-align:justify,text-decoration: underline">
+                      <h6 style="color:red; text-align:center">Type a Question Here</h6>
+                    </div>
+                    {% if question %}
+                      <div class="form-group">
+                        <input type="text" class="form-control" name="question" placeholder="{{question}}" required/>
+                      </div>
+                      <div class="btn btn-default"><a href="/">Start Over</a></div>
+                    {% else %}
+                      <div class="form-group">
+                        <input type="text" class="form-control" name="question" required/>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Generate Answer</button>
+                    {% endif %}
+                    
+                  </div>
+                </div> <!-- question div ends here-->
+                
+              </form> <!-- form ends here -->
+        
+            </div>
+          </div> <!--input container ends here-->
+        
+          <div class="container" style="text-align:center"> <!-- answer container starts here -->
+            <h4>ANSWER</h4>
+              <div class="well">
+                {% if answer %}
+                  <h5> {{answer}} </h5>
+                {% else %}
+                  <h5 style='color: red'> START A OPERATION </h5>
+                {% endif %}
+              </div>
+          </div> <!--answer container ends here-->
+          
+        </div> <!-- main div ends here -->
+    </body>
+</html>
