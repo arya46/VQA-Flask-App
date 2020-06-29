@@ -28,6 +28,8 @@ The model architecture is based on the paper [Hierarchical Question-Image Co-Att
 ## Technical Aspect
 The model used in the app is trained on [VQA 2.0](https://visualqa.org/download.html) dataset. The accuracy of the paper on this dataset is 54%. The model used in the Flask app has an accuracy of 49.20%.
 
+To know more about the implementation details of the model, check out the ipython notebooks [here](https://github.com/arya46/portfolio_notebooks/tree/master/Visual%20Question%20Answering).
+
 ## Running the app locally
 *The Code is written in Python 3.7. If you don't have Python installed you can find it [here](https://www.python.org/downloads/). If you are using a lower version of Python you can upgrade using the pip package, ensuring you have the latest version of pip.*
 
