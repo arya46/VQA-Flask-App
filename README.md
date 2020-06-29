@@ -2,16 +2,15 @@
 
 ## Table of Content
 - [Introduction](#introduction)
-- Demo
-- Model Overview
-- Technical Aspect
-- Running the app locally
-- Project Directory Tree
-- Technologies Used
-- To Do
-- Contributions / Bug
-- License
-
+- [Demo](#demo)
+- [Model Overview](#model-overview)
+- [Technical Aspect](#technical-aspect)
+- [Running the app locally](#running-the-app-locally)
+- [Project Directory Tree](#project-directory-tree)
+- [Technologies Used](#technologies-used)
+- [To Do](#to-do)
+- [Contributions / Bug](#contributions--bug)
+- [License](#license)
 
 ## Introduction
 A simple Flask app to generate answer given an image and a natural language question about the image. The app uses a deep learning model, trained with Tensorflow, behind the scenes.
@@ -27,10 +26,11 @@ Recent developments in Deep Learning has paved the way to accomplish tasks invol
 The model architecture is based on the paper [Hierarchical Question-Image Co-Attention for Visual Question Answering](https://arxiv.org/pdf/1606.00061).
 
 ## Technical Aspect
-The model is trained on [VQA 2.0](https://visualqa.org/download.html) dataset. The accuracy of the paper on this dataset is 54%. The model used in the Flask app has an accuracy of 49.20%.
+The model used in the app is trained on [VQA 2.0](https://visualqa.org/download.html) dataset. The accuracy of the paper on this dataset is 54%. The model used in the Flask app has an accuracy of 49.20%.
 
 ## Running the app locally
 *The Code is written in Python 3.7. If you don't have Python installed you can find it [here](https://www.python.org/downloads/). If you are using a lower version of Python you can upgrade using the pip package, ensuring you have the latest version of pip.*
+
 First, clone this project to your local machine:
 ```
 https://github.com/arya46/VQA_HieCoAtt.git
