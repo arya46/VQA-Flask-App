@@ -1,4 +1,4 @@
-# Visual Question Answering 
+# Visual Question Answering
 
 ## Table of Content
 - Introduction
@@ -14,7 +14,7 @@
 
 
 ## Introduction
-A simple Flask app to generate answer given an image and a natural language question about the image.
+A simple Flask app to generate answer given an image and a natural language question about the image. The app uses a deep learning model, trained with Tensorflow, behind the scenes.
 
 ## Demo 
 Link - https://youtu.be/pah91J4MnzI
@@ -63,6 +63,7 @@ The app will run on `http://localhost:8080/` in the browser.
 ├── utils 
 │   ├── helper_functions.py
 │   └── load_pickles.py
+├── LICENSE
 ├── README.md
 ├── main.py
 └── requirements.txt
