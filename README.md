@@ -1,7 +1,7 @@
 # Visual Question Answering
 
 ## Table of Content
-- Introduction
+- [Introduction](#introduction)
 - Demo
 - Model Overview
 - Technical Aspect
@@ -77,7 +77,7 @@ The app will run on `http://localhost:8080/` in the browser.
 - [ ] Deployement on Heroku
 
 ## Contributions / Bug
-If you want to contribute to this project, or want to report a bug, kindly open an issue [here](https://github.com/arya46/VQA_HieCoAtt/issues/new)
+If you want to contribute to this project, or want to report a bug, kindly open an issue [here](https://github.com/arya46/VQA_HieCoAtt/issues/new).
 
 ## License
 [LICENSE](https://github.com/arya46/VQA_HieCoAtt/blob/master/LICENSE)
