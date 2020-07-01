@@ -34,7 +34,7 @@ The model used in the app is trained on [VQA 2.0](https://visualqa.org/download.
 
 First, clone this project to your local machine:
 ```
-https://github.com/arya46/VQA_HieCoAtt.git
+git clone https://github.com/arya46/VQA_HieCoAtt.git
 
 # change the working directory
 cd VQA_HieCoAtt
