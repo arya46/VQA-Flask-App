@@ -5,6 +5,6 @@ Werkzeug==0.16.0
 Flask==1.1.1
 pandas==0.25.3
 Flask_Cors==3.0.8
-tensorflow==2.1.2
+tensorflow==2.6.4
 joblib==0.16.0
 
