@@ -1,6 +1,6 @@
 scikit-learn==0.22.2.post1
 silence_tensorflow==1.1.1
-numpy==1.17.4
+numpy==1.22.0
 Werkzeug==0.16.0
 Flask==1.1.1
 pandas==0.25.3
